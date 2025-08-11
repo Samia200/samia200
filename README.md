@@ -4,7 +4,7 @@
 - 💬 Ask me about **html & css & css tailwind & react & react native & javascript **
 
 - 📫 How to reach me **samiamin821940@gmail.com**
--  website : https://preview--sky-glow-showcase.lovable.app/
+-  website : https://portfoliosamia.lovable.app/
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
