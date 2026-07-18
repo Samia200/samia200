@@ -1,0 +1,291 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
+  <title id="title">Samia Bouhanna cinematic anime developer banner</title>
+  <desc id="desc">An animated purple cyberpunk scene with an anime-inspired developer, holographic code panels, particles, and Samia Bouhanna's name.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#070912"/>
+      <stop offset="45%" stop-color="#111229"/>
+      <stop offset="100%" stop-color="#090A16"/>
+    </linearGradient>
+
+    <radialGradient id="nebula" cx="50%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity=".38"/>
+      <stop offset="55%" stop-color="#6D28D9" stop-opacity=".12"/>
+      <stop offset="100%" stop-color="#060711" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="violet" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#E9D5FF"/>
+      <stop offset="40%" stop-color="#C084FC"/>
+      <stop offset="100%" stop-color="#7C3AED"/>
+    </linearGradient>
+
+    <linearGradient id="pink" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F9A8D4"/>
+      <stop offset="100%" stop-color="#A855F7"/>
+    </linearGradient>
+
+    <linearGradient id="skin" x1="0" y1="0" x2=".8" y2="1">
+      <stop offset="0%" stop-color="#FFE3D5"/>
+      <stop offset="55%" stop-color="#F6BFAE"/>
+      <stop offset="100%" stop-color="#D98F86"/>
+    </linearGradient>
+
+    <linearGradient id="hair" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1F1937"/>
+      <stop offset="40%" stop-color="#3B2360"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+
+    <linearGradient id="coat" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#27213F"/>
+      <stop offset="55%" stop-color="#171429"/>
+      <stop offset="100%" stop-color="#070811"/>
+    </linearGradient>
+
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity=".16"/>
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity=".04"/>
+    </linearGradient>
+
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="18" stdDeviation="20" flood-color="#000000" flood-opacity=".55"/>
+    </filter>
+
+    <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse">
+      <path d="M42 0H0V42" fill="none" stroke="#A78BFA" stroke-opacity=".09" stroke-width="1"/>
+    </pattern>
+
+    <clipPath id="screenClip">
+      <rect x="813" y="305" width="262" height="145" rx="18"/>
+    </clipPath>
+
+    <style>
+      .star { animation: drift 8s ease-in-out infinite alternate; }
+      .star.s2 { animation-duration: 11s; animation-delay: -3s; }
+      .star.s3 { animation-duration: 14s; animation-delay: -7s; }
+      .orb { transform-origin: 910px 238px; animation: orbit 18s linear infinite; }
+      .orb2 { transform-origin: 910px 238px; animation: orbitReverse 13s linear infinite; }
+      .float { animation: float 5s ease-in-out infinite; }
+      .float2 { animation: float 6.5s ease-in-out infinite reverse; }
+      .pulse { animation: pulse 2.8s ease-in-out infinite; }
+      .scan { animation: scan 4.2s linear infinite; }
+      .blink { transform-origin: center; animation: blink 5.6s infinite; }
+      .hair-sway { transform-origin: 932px 144px; animation: sway 4.8s ease-in-out infinite; }
+      .cursor { animation: cursor 1s steps(2,end) infinite; }
+      .line1 { stroke-dasharray: 180; stroke-dashoffset: 180; animation: draw 4s ease-in-out infinite; }
+      .line2 { stroke-dasharray: 120; stroke-dashoffset: 120; animation: draw 4s .5s ease-in-out infinite; }
+
+      @keyframes drift {
+        from { transform: translate(0, 0); opacity: .35; }
+        to { transform: translate(18px, -13px); opacity: 1; }
+      }
+      @keyframes orbit { to { transform: rotate(360deg); } }
+      @keyframes orbitReverse { to { transform: rotate(-360deg); } }
+      @keyframes float {
+        0%,100% { transform: translateY(0); }
+        50% { transform: translateY(-12px); }
+      }
+      @keyframes pulse {
+        0%,100% { opacity: .45; }
+        50% { opacity: 1; }
+      }
+      @keyframes scan {
+        0% { transform: translateY(-20px); opacity: 0; }
+        15%,80% { opacity: .7; }
+        100% { transform: translateY(170px); opacity: 0; }
+      }
+      @keyframes blink {
+        0%,46%,50%,100% { transform: scaleY(1); }
+        48% { transform: scaleY(.08); }
+      }
+      @keyframes sway {
+        0%,100% { transform: rotate(-1.5deg); }
+        50% { transform: rotate(2deg); }
+      }
+      @keyframes cursor { 50% { opacity: 0; } }
+      @keyframes draw {
+        0% { stroke-dashoffset: 180; opacity: .2; }
+        40%,75% { stroke-dashoffset: 0; opacity: 1; }
+        100% { stroke-dashoffset: -180; opacity: .2; }
+      }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="520" rx="28" fill="url(#bg)"/>
+  <rect width="1200" height="520" rx="28" fill="url(#grid)"/>
+  <ellipse cx="940" cy="245" rx="330" ry="290" fill="url(#nebula)" filter="url(#soft)"/>
+  <ellipse cx="330" cy="170" rx="260" ry="180" fill="#4C1D95" opacity=".1" filter="url(#soft)"/>
+
+  <!-- Animated particles -->
+  <g fill="#E9D5FF">
+    <circle class="star" cx="88" cy="82" r="2.4"/>
+    <circle class="star s2" cx="185" cy="412" r="1.8"/>
+    <circle class="star s3" cx="420" cy="74" r="2"/>
+    <circle class="star s2" cx="555" cy="386" r="2.2"/>
+    <circle class="star" cx="675" cy="97" r="1.7"/>
+    <circle class="star s3" cx="1105" cy="92" r="2.5"/>
+    <circle class="star" cx="1142" cy="402" r="1.8"/>
+  </g>
+
+  <g class="pulse" fill="#C084FC" filter="url(#glow)">
+    <circle cx="135" cy="164" r="3"/>
+    <circle cx="526" cy="131" r="2.5"/>
+    <circle cx="632" cy="434" r="3"/>
+    <circle cx="1120" cy="215" r="3"/>
+  </g>
+
+  <!-- Decorative rings -->
+  <g opacity=".7">
+    <ellipse cx="910" cy="238" rx="250" ry="205" fill="none" stroke="#8B5CF6" stroke-opacity=".26" stroke-width="1.5" stroke-dasharray="7 13"/>
+    <ellipse cx="910" cy="238" rx="205" ry="170" fill="none" stroke="#E879F9" stroke-opacity=".22" stroke-width="1"/>
+    <g class="orb">
+      <circle cx="1160" cy="238" r="6" fill="#E9D5FF" filter="url(#glow)"/>
+    </g>
+    <g class="orb2">
+      <circle cx="910" cy="68" r="4" fill="#F9A8D4" filter="url(#glow)"/>
+    </g>
+  </g>
+
+  <!-- Left copy -->
+  <g transform="translate(78 88)">
+    <text x="0" y="0" fill="#A78BFA" font-family="Inter,Segoe UI,sans-serif" font-size="14" font-weight="700" letter-spacing="4">FRONTEND DEVELOPER // ALGERIA</text>
+    <text x="0" y="78" fill="#F8FAFC" font-family="Inter,Segoe UI,sans-serif" font-size="65" font-weight="800" letter-spacing="-2">SAMIA</text>
+    <text x="0" y="142" fill="url(#violet)" font-family="Inter,Segoe UI,sans-serif" font-size="65" font-weight="800" letter-spacing="-2">BOUHANNA</text>
+
+    <rect x="0" y="180" width="455" height="1" fill="#8B5CF6" opacity=".45"/>
+
+    <text x="0" y="222" fill="#CBD5E1" font-family="Inter,Segoe UI,sans-serif" font-size="20" font-weight="500">
+      I engineer interfaces that feel
+    </text>
+    <text x="0" y="254" fill="#F8FAFC" font-family="Inter,Segoe UI,sans-serif" font-size="22" font-weight="700">
+      clear, alive &amp; human.
+    </text>
+
+    <g transform="translate(0 302)">
+      <rect width="130" height="38" rx="19" fill="#8B5CF6" fill-opacity=".15" stroke="#A78BFA" stroke-opacity=".6"/>
+      <circle cx="21" cy="19" r="5" fill="#22C55E" filter="url(#glow)"/>
+      <text x="36" y="24" fill="#E2E8F0" font-family="Inter,Segoe UI,sans-serif" font-size="12" font-weight="700" letter-spacing="1">AVAILABLE</text>
+
+      <rect x="144" width="158" height="38" rx="19" fill="#FFFFFF" fill-opacity=".04" stroke="#FFFFFF" stroke-opacity=".14"/>
+      <text x="167" y="24" fill="#C4B5FD" font-family="Inter,Segoe UI,sans-serif" font-size="12" font-weight="700" letter-spacing="1">REACT • VUE • NEXT</text>
+    </g>
+
+    <g transform="translate(0 372)" opacity=".68">
+      <text x="0" y="0" fill="#94A3B8" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12">&lt;build mode="cinematic" /&gt;</text>
+      <rect class="cursor" x="226" y="-13" width="8" height="16" rx="1" fill="#C084FC"/>
+    </g>
+  </g>
+
+  <!-- Floating holographic panel -->
+  <g class="float2" transform="translate(612 128) rotate(-4)" filter="url(#shadow)">
+    <rect width="180" height="122" rx="16" fill="url(#glass)" stroke="#C084FC" stroke-opacity=".35"/>
+    <rect x="14" y="13" width="152" height="11" rx="5" fill="#FFFFFF" fill-opacity=".06"/>
+    <circle cx="25" cy="18.5" r="3" fill="#F472B6"/>
+    <circle cx="36" cy="18.5" r="3" fill="#FBBF24"/>
+    <circle cx="47" cy="18.5" r="3" fill="#34D399"/>
+    <path class="line1" d="M22 48 H143" fill="none" stroke="#C4B5FD" stroke-width="5" stroke-linecap="round"/>
+    <path class="line2" d="M22 68 H112" fill="none" stroke="#67E8F9" stroke-width="5" stroke-linecap="round"/>
+    <path d="M22 88 H81" fill="none" stroke="#F9A8D4" stroke-opacity=".65" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Character shadow -->
+  <ellipse cx="925" cy="462" rx="205" ry="38" fill="#000000" opacity=".55" filter="url(#soft)"/>
+
+  <!-- Anime-inspired developer -->
+  <g class="float" filter="url(#shadow)">
+    <!-- Hair back -->
+    <path class="hair-sway" d="M862 118 C875 68 958 52 1006 86 C1055 120 1058 222 1025 286 C1008 319 970 329 925 312 C866 291 829 213 862 118Z" fill="url(#hair)"/>
+    <path d="M845 165 C824 229 841 314 894 348 C861 351 819 328 802 291 C779 240 797 174 845 133Z" fill="#24183C" opacity=".95"/>
+    <path d="M1006 113 C1065 151 1075 244 1035 329 C1082 290 1096 225 1071 164 C1054 123 1027 96 995 85Z" fill="#5B2A86" opacity=".76"/>
+
+    <!-- Neck -->
+    <path d="M905 250 C907 276 902 292 887 307 C918 331 969 330 992 300 C970 287 967 269 970 246Z" fill="url(#skin)"/>
+
+    <!-- Torso / jacket -->
+    <path d="M860 298 C820 311 789 344 777 425 L1065 425 C1059 349 1032 317 990 299 C956 329 895 330 860 298Z" fill="url(#coat)"/>
+    <path d="M860 298 C886 332 963 340 991 299 L974 287 C950 309 902 308 877 287Z" fill="#7C3AED" opacity=".42"/>
+    <path d="M877 310 L922 425 H809 C815 359 833 326 877 310Z" fill="#2C2445" opacity=".72"/>
+    <path d="M989 310 L941 425 H1047 C1038 360 1023 329 989 310Z" fill="#11121E" opacity=".75"/>
+    <path d="M921 329 L933 425" stroke="#C4B5FD" stroke-opacity=".42" stroke-width="3"/>
+    <circle cx="931" cy="351" r="4" fill="#D8B4FE"/>
+    <circle cx="934" cy="379" r="4" fill="#D8B4FE"/>
+
+    <!-- Face -->
+    <ellipse cx="934" cy="182" rx="75" ry="91" fill="url(#skin)"/>
+    <path d="M869 151 C873 88 948 69 999 109 C974 107 950 117 929 135 C905 155 891 166 869 171Z" fill="#211632"/>
+    <path d="M871 149 C884 108 920 82 971 90 C929 102 905 131 892 170 C882 166 876 159 871 149Z" fill="#5B2A86"/>
+    <path class="hair-sway" d="M970 89 C1016 111 1019 157 1006 205 C997 176 984 153 956 136 C970 123 976 107 970 89Z" fill="#38204F"/>
+    <path d="M888 114 C899 85 936 74 965 88 C931 93 913 110 901 139Z" fill="#A855F7" opacity=".35"/>
+
+    <!-- Ears -->
+    <ellipse cx="862" cy="188" rx="13" ry="21" fill="#E8A798"/>
+    <ellipse cx="1006" cy="188" rx="13" ry="21" fill="#D9948A"/>
+
+    <!-- Eyes -->
+    <g class="blink">
+      <path d="M891 183 Q908 171 924 183 Q908 194 891 183Z" fill="#F8FAFC"/>
+      <ellipse cx="908" cy="183" rx="6.5" ry="9" fill="#6D28D9"/>
+      <circle cx="910" cy="180" r="2.3" fill="#FFFFFF"/>
+
+      <path d="M944 183 Q961 171 978 183 Q961 194 944 183Z" fill="#F8FAFC"/>
+      <ellipse cx="961" cy="183" rx="6.5" ry="9" fill="#6D28D9"/>
+      <circle cx="963" cy="180" r="2.3" fill="#FFFFFF"/>
+    </g>
+
+    <path d="M892 166 Q909 157 925 166" fill="none" stroke="#3A2446" stroke-width="4" stroke-linecap="round"/>
+    <path d="M943 166 Q960 157 977 166" fill="none" stroke="#3A2446" stroke-width="4" stroke-linecap="round"/>
+    <path d="M934 187 Q928 208 939 210" fill="none" stroke="#BD7D79" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M916 226 Q934 238 953 225" fill="none" stroke="#A84D68" stroke-width="4" stroke-linecap="round"/>
+    <path d="M918 224 Q934 229 951 224" fill="none" stroke="#F7A8B8" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Headphones -->
+    <path d="M866 177 C853 105 895 78 934 76 C977 74 1016 104 1011 178" fill="none" stroke="#171826" stroke-width="14"/>
+    <path d="M866 177 C853 105 895 78 934 76 C977 74 1016 104 1011 178" fill="none" stroke="#8B5CF6" stroke-opacity=".65" stroke-width="4"/>
+    <rect x="849" y="166" width="28" height="52" rx="13" fill="#161522" stroke="#A78BFA" stroke-width="3"/>
+    <rect x="993" y="166" width="28" height="52" rx="13" fill="#161522" stroke="#A78BFA" stroke-width="3"/>
+    <circle class="pulse" cx="863" cy="192" r="5" fill="#E879F9" filter="url(#glow)"/>
+    <circle class="pulse" cx="1007" cy="192" r="5" fill="#E879F9" filter="url(#glow)"/>
+
+    <!-- Laptop -->
+    <g>
+      <rect x="799" y="296" width="289" height="171" rx="22" fill="#11131F" stroke="#A78BFA" stroke-opacity=".48" stroke-width="2"/>
+      <rect x="813" y="305" width="262" height="145" rx="18" fill="#090B14"/>
+      <g clip-path="url(#screenClip)">
+        <rect x="813" y="305" width="262" height="145" fill="#0B1020"/>
+        <rect class="scan" x="813" y="305" width="262" height="2" fill="#C084FC" opacity=".6" filter="url(#glow)"/>
+        <text x="832" y="335" fill="#C4B5FD" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12">const experience = {</text>
+        <text x="846" y="358" fill="#67E8F9" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12">clear: true,</text>
+        <text x="846" y="381" fill="#F9A8D4" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12">alive: true,</text>
+        <text x="846" y="404" fill="#86EFAC" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12">human: true</text>
+        <text x="832" y="427" fill="#C4B5FD" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12">};</text>
+      </g>
+      <path d="M770 467 H1115 L1092 487 H793Z" fill="#1D2030" stroke="#A78BFA" stroke-opacity=".3"/>
+      <rect x="915" y="469" width="58" height="7" rx="3.5" fill="#8B5CF6" opacity=".7"/>
+    </g>
+  </g>
+
+  <!-- Frame -->
+  <rect x="1.5" y="1.5" width="1197" height="517" rx="27" fill="none" stroke="#A78BFA" stroke-opacity=".28" stroke-width="3"/>
+  <rect x="18" y="18" width="1164" height="484" rx="20" fill="none" stroke="#FFFFFF" stroke-opacity=".035"/>
+
+  <!-- Corner details -->
+  <path d="M31 73 V31 H73" fill="none" stroke="#C084FC" stroke-opacity=".6" stroke-width="2"/>
+  <path d="M1127 31 H1169 V73" fill="none" stroke="#C084FC" stroke-opacity=".6" stroke-width="2"/>
+  <path d="M31 447 V489 H73" fill="none" stroke="#C084FC" stroke-opacity=".6" stroke-width="2"/>
+  <path d="M1127 489 H1169 V447" fill="none" stroke="#C084FC" stroke-opacity=".6" stroke-width="2"/>
+</svg>
